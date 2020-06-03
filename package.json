@@ -1,0 +1,20 @@
+{
+  "name": "outlook-electron",
+  "version": "1.0.0",
+  "description": "Electron Wrapper around outlook web client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-installer-dmg": "^3.0.0",
+    "electron-packager": "^14.2.1"
+  }
+}
