@@ -18,6 +18,13 @@ function createWindow () {
   mainWindow.loadURL('https://outlook.office.com')
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.on('new-window', function(e, url) {
+    if (!url.includes('outlook.office.com/mail/deeplink') && !url.includes('zoom.us') && !url.includes('outlook.office.com/calendar/deeplink')){
+      e.preventDefault();
+      require('electron').shell.openExternal(url);
+    }
+
+  });
 }
 
 // This method will be called when Electron has finished

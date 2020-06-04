@@ -8,9 +8,11 @@
   },
   "repository": "",
   "keywords": [
-    "Electron"
+    "Electron",
+    "outlook",
+    "email"
   ],
-  "author": "",
+  "author": "donutsahoy",
   "license": "",
   "devDependencies": {
     "electron": "^9.0.0",
